@@ -29,7 +29,6 @@ const store = createStore({
         ClientSecret: "SECRET0001",
         RedirectUri: "https://api.eva.guru",
       });
-      console.log(response, "response");
       const responseData = response.data.Data;
       if (response.data.ApiStatusCode !== 200) {
         throw {};
